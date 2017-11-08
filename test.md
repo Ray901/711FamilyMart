@@ -105,7 +105,7 @@ dataList
 
 4.  Use the **quanteda** package to save this to a corpus object, look up the result using the Lexicoder Sentiment dictionary (see `?data_dictionary_LSD2015), and plot the positive versus negative balance using a barplot.
 
-    ```{r, warning=FALSE, message=FALSE}
+```{r, warning=FALSE, message=FALSE}
 library(ggplot2)
 
 suppressPackageStartupMessages(library("quanteda"))
@@ -124,7 +124,7 @@ df <- data.frame(device = rep(rownames(trump_sentiment),2),
 ggplot(data=df, aes(x=device, y=Frequency, fill=Content)) +
   geom_bar(stat="identity", color="black", position=position_dodge())+
   theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-    ```
+```
 ![Sample panel plot](./plot1.png) 
 
 ## Part C: Working with Facebook Data (30 points)
