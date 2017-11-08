@@ -121,10 +121,9 @@ df <- data.frame(device = rep(rownames(trump_sentiment),2),
                                as.numeric(trump_sentiment[,'positive'])), 
                  row.names = NULL, stringsAsFactors = FALSE)
 
-p <- ggplot(data=df, aes(x=device, y=Frequency, fill=Content)) +
+ggplot(data=df, aes(x=device, y=Frequency, fill=Content)) +
   geom_bar(stat="identity", color="black", position=position_dodge())+
   theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-p
     ```
 
 
