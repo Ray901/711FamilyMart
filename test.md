@@ -24,9 +24,9 @@ There are plenty of instructions about how to use RMarkdown, such as [these](htt
 
 1.  Try using `curl` to get a website from `http://www.example.com`.  This one is provided for you, as an example.  On Windows, you might need to change the language engine to something other than bash.  (See http://rmarkdown.rstudio.com/authoring_knitr_engines.html#bash)
 
-<!-- ```{bash} -->
-<!-- curl http://www.example.com -->
-<!-- ``` -->
+```{bash}
+ curl http://www.example.com
+```
 
 2.  Get the information from the [GitHub API](https://developer.github.com/v3/repos/#get) about the [`lse-st445/lectures`](https://github.com/lse-st445/lectures) repository.  You will need to use `curl` for this, but you are welcome to use the [**RCurl**](https://cran.r-project.org/web/packages/RCurl/index.html) package for R, or the [PycURL](http://pycurl.io/docs/latest/) module for Python to do this.  The examples below give you the starter code you need for the R solution.
 
@@ -125,7 +125,7 @@ ggplot(data=df, aes(x=device, y=Frequency, fill=Content)) +
   geom_bar(stat="identity", color="black", position=position_dodge())+
   theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
-![Sample panel plot](./plot1.png) 
+![Sample panel plot](https://github.com/Ray901/711FamilyMart/blob/master/plot1.png) 
 
 ## Part C: Working with Facebook Data (30 points)
 
