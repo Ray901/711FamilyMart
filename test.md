@@ -125,8 +125,9 @@ ggplot(data=df, aes(x=device, y=Frequency, fill=Content)) +
   geom_bar(stat="identity", color="black", position=position_dodge())+
   theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1))
     ```
-
-
+```{r, out.width='100%'}
+knitr::include_graphics('./plot1.png')
+```
 
 ## Part C: Working with Facebook Data (30 points)
 
