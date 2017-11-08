@@ -32,7 +32,7 @@ There are plenty of instructions about how to use RMarkdown, such as [these](htt
 
     Hint: Part of the URL will be `repos/lse-st445`.
     
-```{r, warning=FALSE, message=FALSE}
+```{r , warning=FALSE, message=FALSE}
 
 library('curl')
 library('jsonlite')
@@ -125,9 +125,7 @@ ggplot(data=df, aes(x=device, y=Frequency, fill=Content)) +
   geom_bar(stat="identity", color="black", position=position_dodge())+
   theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1))
     ```
-```{r, echo=FALSE, out.width='100%'}
-knitr::include_graphics('./plot1.png')
-```
+![Sample panel plot](./plot1.png) 
 
 ## Part C: Working with Facebook Data (30 points)
 
